@@ -1,0 +1,32 @@
+{
+	"name": "test",
+	"private": true,
+	"version": "1.0.0",
+	"sideEffects": false,
+	"dependencies": {
+		"@babel/preset-env": "^7.16.11",
+		"core-js": "^3.22.3",
+		"laravel-mix": "^6.0.43",
+		"raw-loader": "^4.0.2",
+		"resolve-url-loader": "^5.0.0",
+		"sass": "^1.51.0",
+		"sass-loader": "^12.6.0",
+		"svg-spritemap-webpack-plugin": "^4.4.0"
+	},
+	"browserslist": [
+		"last 2 versions and not dead",
+		">= 1%",
+		"Firefox ESR",
+		"safari >= 13",
+		"not ie >= 10",
+		"not ie_mob >= 10"
+	],
+	"scripts": {
+		"dev": "npm run development",
+		"development": "mix",
+		"start": "npx mix watch",
+		"build": "npm run production",
+		"production": "mix --production",
+		"fix": "eslint --fix \"resources/assets/js/**\""
+	}
+}
